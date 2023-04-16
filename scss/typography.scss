@@ -5,78 +5,78 @@ Typography
 
 /* Inter variable */
 @font-face {
-  font-family: "Inter";
-  font-style: normal;
+  font-family: 'Inter';
+  font-style:  normal;
   font-weight: 400;
   font-display: swap;
-  src: url($Inter-Regular) format("woff2");
+  src: url($Inter-Regular) format("woff2")
 }
 @font-face {
-  font-family: "Inter";
-  font-style: italic;
+  font-family: 'Inter';
+  font-style:  italic;
   font-weight: 400;
   font-display: swap;
-  src: url($Inter-Italic) format("woff2");
+  src: url($Inter-Italic) format("woff2")
 }
 
 @font-face {
-  font-family: "Inter";
-  font-style: normal;
+  font-family: 'Inter';
+  font-style:  normal;
   font-weight: 500;
   font-display: swap;
-  src: url($Inter-Medium) format("woff2");
+  src: url($Inter-Medium) format("woff2")
 }
 @font-face {
-  font-family: "Inter";
-  font-style: italic;
+  font-family: 'Inter';
+  font-style:  italic;
   font-weight: 500;
   font-display: swap;
-  src: url($Inter-MediumItalic) format("woff2");
+  src: url($Inter-MediumItalic) format("woff2")
 }
 
 @font-face {
-  font-family: "Inter";
-  font-style: normal;
+  font-family: 'Inter';
+  font-style:  normal;
   font-weight: 600;
   font-display: swap;
-  src: url($Inter-SemiBold) format("woff2");
+  src: url($Inter-SemiBold) format("woff2")
 }
 @font-face {
-  font-family: "Inter";
-  font-style: italic;
+  font-family: 'Inter';
+  font-style:  italic;
   font-weight: 600;
   font-display: swap;
-  src: url($Inter-SemiBoldItalic) format("woff2");
+  src: url($Inter-SemiBoldItalic) format("woff2")
 }
 
 @font-face {
-  font-family: "Inter";
-  font-style: normal;
+  font-family: 'Inter';
+  font-style:  normal;
   font-weight: 700;
   font-display: swap;
-  src: url($Inter-Bold) format("woff2");
+  src: url($Inter-Bold) format("woff2")
 }
 @font-face {
-  font-family: "Inter";
-  font-style: italic;
+  font-family: 'Inter';
+  font-style:  italic;
   font-weight: 700;
   font-display: swap;
-  src: url($Inter-BoldItalic) format("woff2");
+  src: url($Inter-BoldItalic) format("woff2")
 }
 @font-face {
-  font-family: "Inter var";
+  font-family: 'Inter var';
   font-weight: 100 900;
   font-display: swap;
   font-style: normal;
-  font-named-instance: "Regular";
+  font-named-instance: 'Regular';
   src: url($Inter-Var-Roman) format("woff2");
 }
 @font-face {
-  font-family: "Inter var";
+  font-family: 'Inter var';
   font-weight: 100 900;
   font-display: swap;
   font-style: italic;
-  font-named-instance: "Italic";
+  font-named-instance: 'Italic';
   src: url($Inter-Var-Italic) format("woff2");
 }
 
