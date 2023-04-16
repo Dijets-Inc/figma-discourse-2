@@ -10,15 +10,16 @@ Buttons
   display: inline-flex;
   font-size: 0.875em;
   font-weight: 500;
-  height: 30px;
+  min-height: 30px;
   min-width: 30px;
-  padding: 0 8px;
+  padding: 4px;
   text-transform: capitalize;
   transition: none;
   &[href] {
     color: var(--fg-high-contrast);
   }
   &.no-text {
+    aspect-ratio: 1/1;
     .d-icon {
       margin: 0px auto;
       vertical-align: initial;
@@ -46,6 +47,14 @@ Buttons
     background-color: var(--fg-high-contrast);
     background-image: unset;
     color: var(--bg);
+  }
+  &:focus {
+    background: inherit;
+    outline: inherit;
+    color: inherit;
+    .d-icon {
+      color: inherit !important;
+    }
   }
   &[disabled] {
     color: var(--fg-medium-contrast) !important;
@@ -128,6 +137,7 @@ Buttons
       }
     }
   }
+  &:focus,
   &.btn-hover,
   &:hover,
   &.btn-active,
@@ -168,13 +178,10 @@ Buttons
   font-weight: 500;
   margin-left: 4px;
   padding: 4px 16px;
-  height: 30px;
   text-transform: capitalize;
 }
 
-.select-kit.single-select.is-expanded .select-kit-header:not(.btn),
-.select-kit.single-select .select-kit-header:not(.btn):focus,
-.select-kit.single-select .select-kit-header:not(.btn):active {
+.select-kit.single-select.is-expanded .select-kit-header:not(.btn), .select-kit.single-select .select-kit-header:not(.btn):focus, .select-kit.single-select .select-kit-header:not(.btn):active {
   outline: none !important;
   border-color: var(--surface-high-contrast) !important;
 }
