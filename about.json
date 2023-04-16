@@ -32,7 +32,7 @@
        "dark": {
           "primary": "#000000",
           "secondary": "#ffffff", 
-          "tertiary": "#236df6, 
+          "tertiary": "#236df6", 
           "quaternary": "#000000", 
           "header_background": "#ffffff", 
           "header_primary": "#333333",
