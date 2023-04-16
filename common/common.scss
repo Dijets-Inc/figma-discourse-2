@@ -102,6 +102,10 @@ div.ac-wrap {
   overflow: revert;
 }
 
+.alert.alert-info {
+    grid-auto-flow: row;
+}
+
 #main-outlet {
   padding: 0 0;
   margin-bottom: 6em;
