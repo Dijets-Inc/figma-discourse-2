@@ -9,9 +9,7 @@ Select kit theming
     padding: 10px;
     width: 260px;
   }
-  &.tag-chooser,
-  &.mini-tag-chooser,
-  &.tag-drop {
+  &.tag-chooser, &.mini-tag-chooser, &.tag-drop {
     .select-kit-row {
       .discourse-tag-count {
         align-self: center;
@@ -27,8 +25,8 @@ Select kit theming
         background-color: transparent;
         color: revert;
       }
-      .avatar {
-        padding: 4px;
+      .avatar { 
+        padding: 4px
       }
       &.is-highlighted > .username {
         color: white !important;
@@ -36,12 +34,7 @@ Select kit theming
     }
   }
   &.combo-box {
-    &.category-chooser,
-    &.category-drop,
-    &.mini-tag-chooser,
-    &.tag-drop,
-    &.single-select,
-    &.multi-select {
+    &.category-chooser, &.category-drop, &.mini-tag-chooser, &.tag-drop, &.single-select, &.multi-select {
       .select-kit-body {
         padding: 8px 0;
       }
@@ -52,7 +45,7 @@ Select kit theming
       .select-kit-row {
         height: 32px;
         padding: 0px 16px 0px 8px;
-        &[data-value="all-categories"],
+        &[data-value="all-categories"], 
         &[data-value="no-categories"] {
           color: var(--modal-fg);
           font-size: 0.875em;
@@ -65,8 +58,7 @@ Select kit theming
           color: var(--fg-high-contrast);
           font-weight: 500;
         }
-        .category-status,
-        .discourse-tag {
+        .category-status, .discourse-tag {
           width: 100%;
           .badge-wrapper:last-of-type {
             width: 100%;
@@ -118,9 +110,11 @@ Select kit theming
       }
     }
     &.period-chooser {
+      margin-bottom: 24px; // adds some distance between the new toolbar and the chooser
       .period-chooser-header {
         background-color: transparent;
         display: inline-flex;
+        height: unset; // .btn-icon-text was overriding this
         margin-left: -12px;
         margin-bottom: 32px;
         padding: 8px 12px !important;
@@ -164,6 +158,11 @@ Select kit theming
         }
       }
       .period-chooser-row {
+        font-size: inherit;
+        padding: 4px 24px;
+        .date-section {
+          color: inherit;
+        }
         .top-date-string {
           color: var(--fg);
           text-transform: none;
@@ -178,6 +177,7 @@ Select kit theming
     .select-kit-row {
       .icons {
         display: revert;
+        margin-right: 8px !important;
         .d-icon {
           font-size: 1em;
         }
@@ -185,13 +185,12 @@ Select kit theming
       .texts {
         .name {
           color: var(--fg-high-contrast);
-          font-weight: 500;
-          padding-bottom: 4px;
+          font-weight: 500 !important;
+          padding: 3px 0 !important;
         }
         .desc {
           color: var(--fg-medium-contrast);
-          min-width: 296px;
-          padding-right: 32px;
+          padding-right: 16px;
         }
       }
     }
@@ -210,7 +209,7 @@ Select kit theming
       }
       .filter-input {
         background: var(--modal-bg);
-        border: 1px solid #dadada;
+        border: 1px solid #DADADA;
         border-radius: 2px;
         font-size: 0.75em;
         padding-left: 8px;
@@ -220,8 +219,13 @@ Select kit theming
   }
   .select-kit-collection {
     background-color: var(--modal-bg);
+    padding: 8px 0 !important;
   }
   .select-kit-header {
+    font-size: 0.8125em;
+    .select-kit-header-wrapper {
+      color: var(--fg-high-contrast); 
+    }
     .selected-name {
       color: var(--fg-high-contrast);
     }
@@ -232,36 +236,34 @@ Select kit theming
       margin: 8px 12px 8px 8px !important;
       width: 8px !important;
     }
-    .category-name,
-    .name {
+    .category-name, .name {
       color: var(--modal-fg);
       font-size: 0.875em !important;
     }
     &.is-highlighted {
       background-color: var(--community-blue);
       color: white !important;
-      .category-name,
-      .name,
-      .topic-count,
-      .desc,
-      .d-icon,
-      .discourse-tag-count {
+      .category-name, .name, .topic-count, .desc, .d-icon, .discourse-tag-count {
         color: white !important;
+      }
+      &:hover {
+        background-color: var(--community-blue) !important;
       }
     }
     &.is-selected {
       background-color: var(--surface-low-contrast);
       &.is-highlighted {
         background-color: var(--community-blue);
-        .category-name,
-        .name,
-        .topic-count {
+        .category-name, .name, .topic-count {
           color: white !important;
         }
       }
     }
   }
 }
+
+
+
 
 /* List controls appears on primary paths (e.g. the home page) and acts
 as Discourse's primary form of navigation between filters */
@@ -297,7 +299,9 @@ as Discourse's primary form of navigation between filters */
     }
     .select-kit-body {
       @include hud-shadow();
+      inset: -2px auto auto -8px !important;
       padding: 8px 0;
+      position: absolute !important;
     }
     .select-kit-collection {
       min-height: 0vh;
@@ -329,6 +333,7 @@ as Discourse's primary form of navigation between filters */
   .multi-select-header {
     background: var(--bg);
     border: 1px solid var(--surface-high-contrast);
+    padding: 8px;
   }
   .select-kit-filter {
     margin: 0;
@@ -339,6 +344,21 @@ as Discourse's primary form of navigation between filters */
   @include hud-shadow();
   ul {
     height: revert;
+  }
+}
+
+/* Edit category pages */
+
+.edit-category {
+  .edit-category-title-bar {
+    .select-kit {
+      &.combo-box {
+        .select-kit-header {
+          background-color: transparent;
+          border: none;
+        }
+      }
+    }
   }
 }
 
@@ -357,7 +377,7 @@ as Discourse's primary form of navigation between filters */
     .select-kit.is-expanded {
       .select-kit-body {
         width: 180px !important;
-        left: revert !important;
+        left: unset;
         right: 0 !important;
       }
     }
