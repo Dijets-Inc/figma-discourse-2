@@ -1,135 +1,6 @@
-$primary: #000000 !default;
-$secondary: #ffffff !default;
-$tertiary: #236df6 !default;
-$quaternary: #000000 !default;
-$header_background: #ffffff !default;
-$header_primary: #333333 !default;
-$highlight: #f5eac1 !default;
-$danger: #f24e1e !default;
-$success: #0fa958 !default;
-$love: #f24e1e !default;
-$primary-low: #f5f5f5 !default;
-$tertiary-low: #f0f0f0 !default;
-$primary-low-mid: #d6d6d6 !default;
-$primary-medium: #5d5d5d !default;
-$primary-high: #333333 !default;
-$public_image_path: "https://sjc3.discourse-cdn.com/business7/images";
-@import "common/foundation/variables";
-@import "common/foundation/mixins";
-$banner: unquote(
-  "https://aws1.discourse-cdn.com/business7/uploads/figma3/original/2X/a/a07141646f7888df129d3a664f99728a1caa44fc.svg"
-);
-$dot-grid: unquote(
-  "https://aws1.discourse-cdn.com/business7/uploads/figma3/original/2X/3/3cae2c422a62197381b15f8334f87580d21083c7.svg"
-);
-$figjam-board: unquote(
-  "https://aws1.discourse-cdn.com/business7/uploads/figma3/original/2X/1/1dc8bbe8a1898f1c68971230ad95685f8a8416bc.svg"
-);
-$figma-icon: unquote(
-  "https://aws1.discourse-cdn.com/business7/uploads/figma3/original/1X/bd18047515d1602ba587a2d7a756d77c81f1c786.svg"
-);
-$general-discussion: unquote(
-  "https://aws1.discourse-cdn.com/business7/uploads/figma3/original/2X/b/b24457baaa3c81a4b6c186dc58e985698622a63a.svg"
-);
-$ic-beta: unquote(
-  "https://aws1.discourse-cdn.com/business7/uploads/figma3/original/2X/4/418c4f87f08ac8b8ecda581b8c699fc3d99b04d4.svg"
-);
-$Inter-Bold: unquote(
-  "https://aws1.discourse-cdn.com/business7/uploads/figma3/original/2X/a/a197eb37acbe6c839d9a549a08fe80bb8a39d6aa.woff2"
-);
-$Inter-BoldItalic: unquote(
-  "https://aws1.discourse-cdn.com/business7/uploads/figma3/original/2X/9/9d433655544762bd3d47e1dbe883d368dee3ea9f.woff2"
-);
-$Inter-Italic: unquote(
-  "https://aws1.discourse-cdn.com/business7/uploads/figma3/original/2X/e/e8877937d0b862d8e743d9172576047a05faf11e.woff2"
-);
-$Inter-Medium: unquote(
-  "https://aws1.discourse-cdn.com/business7/uploads/figma3/original/2X/8/85bd69c6604c42cd7cff42f69686ae9f5765b09c.woff2"
-);
-$Inter-MediumItalic: unquote(
-  "https://aws1.discourse-cdn.com/business7/uploads/figma3/original/2X/f/fb3bf6cadab86352a454f3e2754a04a680d45d6e.woff2"
-);
-$Inter-Regular: unquote(
-  "https://aws1.discourse-cdn.com/business7/uploads/figma3/original/2X/d/d54ba8fa95573fa24442dab96795eaf8db66aa80.woff2"
-);
-$Inter-SemiBold: unquote(
-  "https://aws1.discourse-cdn.com/business7/uploads/figma3/original/2X/3/3e4531452e8ed6b6ddeb7a9c53c8e09f3575c006.woff2"
-);
-$Inter-SemiBoldItalic: unquote(
-  "https://aws1.discourse-cdn.com/business7/uploads/figma3/original/2X/8/824995d8e9586f26e1b867904d542ca787ae1d38.woff2"
-);
-$Inter-Var-Italic: unquote(
-  "https://aws1.discourse-cdn.com/business7/uploads/figma3/original/2X/5/5c2ff0c81a369e4ff3b060b5eeee59e82058a41e.woff2"
-);
-$Inter-Var-Roman: unquote(
-  "https://aws1.discourse-cdn.com/business7/uploads/figma3/original/2X/0/03d67f11d4c6bcdd6182f0bcebb26d11e8c13dd3.woff2"
-);
-$mobile-beta: unquote(
-  "https://aws1.discourse-cdn.com/business7/uploads/figma3/original/2X/c/caf27ddc3497bb0e5c35ed9420c1b0298921bac4.svg"
-);
-$plugin-api: unquote(
-  "https://aws1.discourse-cdn.com/business7/uploads/figma3/original/2X/7/7975c39fb41e8b6572648c86025a4a0c682e3538.svg"
-);
-$product-ideas: unquote(
-  "https://aws1.discourse-cdn.com/business7/uploads/figma3/original/2X/1/1010e9bca59e19899a166d4594d25bccf3c6408c.svg"
-);
-$product-questions: unquote(
-  "https://aws1.discourse-cdn.com/business7/uploads/figma3/original/2X/5/592ed6ed8ea526c61f524f92e221a8918e5323ac.svg"
-);
-$rest-api: unquote(
-  "https://aws1.discourse-cdn.com/business7/uploads/figma3/original/2X/8/8aa7b09cfc5606cb812a174114c76b5b8a96cf58.svg"
-);
-$zendesk-icon: unquote(
-  "https://aws1.discourse-cdn.com/business7/uploads/figma3/original/1X/314083583b5555490fe4b44f742725a8eb0a5d53.svg"
-);
-$show_description: unquote("true");
-$show_mobile: unquote("false");
-$show_subcategory: unquote("true");
-$hide_if_no_description: unquote("false");
-$exceptions: unquote("");
-$categories: unquote("");
-$show_above_site_header: unquote("false");
-$show_below_site_header: unquote("true");
-$show_category_icon: unquote("false");
-$show_for_members: unquote("true");
-$show_for_anon: unquote("true");
-$display_on_mobile: unquote("false");
-$display_on_desktop: unquote("true");
-$display_on_homepage: unquote("true");
-$url_must_contain: unquote("/latest|/categories|/new|/unread|/top*");
-$dismissible: unquote("false");
-$collapsible: unquote("false");
-$default_collapsed_state: unquote("collapsed");
-$cookie_lifespan: unquote("none");
-$cookie_name: unquote("v1");
-$full_width_banner: unquote("true");
-$swap_default_positioning: unquote("false");
-$banner_background_image: unquote("assets/banner.svg");
-$background_color: unquote("#000");
-$primary_text_color: unquote("#fff");
-$secondary_text_color: unquote("#fff");
-$link_text_color: unquote("#fff");
-$main_heading_content: unquote(
-  '<h1 class="banner-title">\a   Welcome to the Figma Support Forum\a</h1>\a<p class="banner-subtitle">\a Ask questions, share feedback, and connect with the Figma community!</p>'
-);
-$first_column_content: unquote("");
-$second_column_content: unquote("");
-$third_column_content: unquote("");
-$fourth_column_content: unquote("");
-$first_column_size: unquote("auto");
-$second_column_size: unquote("auto");
-$third_column_size: unquote("auto");
-$fourth_column_size: unquote("");
-$first_column_icon: unquote("cog");
-$second_column_icon: unquote(
-  "https://d11a6trkgmumsb.cloudfront.net/original/3X/b/3/b33be9538df3547fcf9d1a51a4637d77392ac6f9.png"
-);
-$third_column_icon: unquote("wrench");
-$fourth_column_icon: unquote("");
-
-// Theme: Figma
+$primary: #000000 !default; $secondary: #ffffff !default; $tertiary: #236df6 !default; $quaternary: #000000 !default; $header_background: #ffffff !default; $header_primary: #333333 !default; $highlight: #f5eac1 !default; $danger: #f24e1e !default; $success: #0fa958 !default; $love: #f24e1e !default; $primary-low: #f5f5f5 !default; $tertiary-low: #f0f0f0 !default; $primary-low-mid: #d6d6d6 !default; $primary-medium: #5d5d5d !default; $primary-high: #333333 !default; $hover: #f0f0f0 !default; $selected: #e6e6e6 !default;  $public_image_path: "https://dub2.discourse-cdn.com/figma/images";  @import "common/foundation/variables"; @import "common/foundation/mixins"; $banner: unquote("https://europe1.discourse-cdn.com/figma/original/2X/a/a07141646f7888df129d3a664f99728a1caa44fc.svg");$dot-grid: unquote("https://europe1.discourse-cdn.com/figma/original/2X/3/3cae2c422a62197381b15f8334f87580d21083c7.svg");$figjam-board: unquote("https://europe1.discourse-cdn.com/figma/original/2X/1/1dc8bbe8a1898f1c68971230ad95685f8a8416bc.svg");$figma-icon: unquote("https://europe1.discourse-cdn.com/figma/original/1X/bd18047515d1602ba587a2d7a756d77c81f1c786.svg");$general-discussion: unquote("https://europe1.discourse-cdn.com/figma/original/2X/b/b24457baaa3c81a4b6c186dc58e985698622a63a.svg");$ic-beta: unquote("https://europe1.discourse-cdn.com/figma/original/2X/4/418c4f87f08ac8b8ecda581b8c699fc3d99b04d4.svg");$Inter-Bold: unquote("https://europe1.discourse-cdn.com/figma/original/2X/a/a197eb37acbe6c839d9a549a08fe80bb8a39d6aa.woff2");$Inter-BoldItalic: unquote("https://europe1.discourse-cdn.com/figma/original/2X/9/9d433655544762bd3d47e1dbe883d368dee3ea9f.woff2");$Inter-Italic: unquote("https://europe1.discourse-cdn.com/figma/original/2X/e/e8877937d0b862d8e743d9172576047a05faf11e.woff2");$Inter-Medium: unquote("https://europe1.discourse-cdn.com/figma/original/2X/8/85bd69c6604c42cd7cff42f69686ae9f5765b09c.woff2");$Inter-MediumItalic: unquote("https://europe1.discourse-cdn.com/figma/original/2X/f/fb3bf6cadab86352a454f3e2754a04a680d45d6e.woff2");$Inter-Regular: unquote("https://europe1.discourse-cdn.com/figma/original/2X/d/d54ba8fa95573fa24442dab96795eaf8db66aa80.woff2");$Inter-SemiBold: unquote("https://europe1.discourse-cdn.com/figma/original/2X/3/3e4531452e8ed6b6ddeb7a9c53c8e09f3575c006.woff2");$Inter-SemiBoldItalic: unquote("https://europe1.discourse-cdn.com/figma/original/2X/8/824995d8e9586f26e1b867904d542ca787ae1d38.woff2");$Inter-Var-Italic: unquote("https://europe1.discourse-cdn.com/figma/original/2X/5/5c2ff0c81a369e4ff3b060b5eeee59e82058a41e.woff2");$Inter-Var-Roman: unquote("https://europe1.discourse-cdn.com/figma/original/2X/0/03d67f11d4c6bcdd6182f0bcebb26d11e8c13dd3.woff2");$mobile-beta: unquote("https://europe1.discourse-cdn.com/figma/original/2X/c/caf27ddc3497bb0e5c35ed9420c1b0298921bac4.svg");$plugin-api: unquote("https://europe1.discourse-cdn.com/figma/original/2X/7/7975c39fb41e8b6572648c86025a4a0c682e3538.svg");$product-ideas: unquote("https://europe1.discourse-cdn.com/figma/original/2X/1/1010e9bca59e19899a166d4594d25bccf3c6408c.svg");$product-questions: unquote("https://europe1.discourse-cdn.com/figma/original/2X/5/592ed6ed8ea526c61f524f92e221a8918e5323ac.svg");$rest-api: unquote("https://europe1.discourse-cdn.com/figma/original/2X/8/8aa7b09cfc5606cb812a174114c76b5b8a96cf58.svg");$zendesk-icon: unquote("https://europe1.discourse-cdn.com/figma/original/1X/314083583b5555490fe4b44f742725a8eb0a5d53.svg");// Theme: Figma
 // Target: common scss
-// Last Edited: 2021-06-09 21:12:26 UTC
+// Last Edited: 2022-08-31 20:35:20 UTC
 /* 
 Figma Community Forum
 Theme
@@ -159,7 +30,7 @@ $header-text: false !default;
 @import "typography";
 @import "mixins";
 
-@import "admin";
+@import "admin-settings";
 @import "buttons";
 @import "empty-state";
 @import "header";
@@ -173,6 +44,11 @@ $header-text: false !default;
 
 @import "category-banners";
 @import "category-boxes";
+@import "search";
+
+.navigation-container {
+  --nav-space: 0;
+}
 
 *:focus {
   outline-color: var(--fg-high-contrast);
@@ -216,9 +92,9 @@ div.ac-wrap {
   grid-template-columns:
     1fr
     unquote("min(90vw, 1200px)")
-    1fr;
+    1fr !important;
   & > * {
-    grid-column: 2;
+    grid-column: 2 !important;
   }
 }
 
@@ -232,6 +108,13 @@ div.ac-wrap {
   margin-top: 2em;
   max-width: unset !important;
   width: unset !important;
+}
+
+#main-outlet-wrapper {
+  .sidebar-wrapper {
+    background-color: transparent;
+    display: none;
+  }
 }
 
 #list-area {
@@ -309,6 +192,7 @@ input[type]:focus,
   @include hud-shadow();
   left: 0;
   padding: 8px 0px;
+  width: unset; // At some point Discourse made this 14em. It pushes text to another line
   z-index: 9999;
   ul {
     li {
@@ -336,10 +220,10 @@ input[type]:focus,
   }
 }
 
-@media (max-width: 1204px) {
+@media (max-width:1204px) {
   .popup-menu {
     left: -196px !important;
-  }
+  } 
 }
 
 .tap-tile-grid {
@@ -359,16 +243,14 @@ input[type]:focus,
   letter-spacing: 0.03em;
   margin-top: 0em;
   margin-bottom: 2em;
-
-  &.alert-info:not(.alert-bootstrap-mode):not(.alert-too-few-topics) {
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: space-between;
-  }
+  
   &.alert-info {
     background-color: rgba(35, 109, 246, 0.1);
     border: none;
     border-radius: 8px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
     padding: 16px 24px;
   }
   &.alert-success {
@@ -463,7 +345,7 @@ input[type]:focus,
   row-gap: 24px;
   grid-template-columns: 1fr min-content;
   grid-template-rows: 1fr min-content;
-  grid-template-areas:
+  grid-template-areas: 
     "navigation buttons"
     "navigation buttons"
     "navigation buttons";
@@ -503,25 +385,24 @@ input[type]:focus,
     }
   }
   #navigation-bar {
-    display: inline-block;
+    display: flex;
     grid-area: navigation;
-    grid-column: -1/1;
+    grid-column: -1/1; 
     grid-row: 2;
     margin: 0 0; /* Discourse will add --nav-space margin otherwise */
   }
   .navigation-controls {
     align-items: center;
     display: flex;
+    flex-wrap: nowrap;
     grid-area: buttons;
     grid-row: 1;
     margin-bottom: 0;
+    z-index: 1; /* This forces the button to be clickable in most situations */
     .btn {
       background-color: transparent;
       color: var(--fg-medium-contrast);
-      height: 30px;
-      &:active,
-      &:hover,
-      &:focus {
+      &:active, &:hover, &:focus {
         color: var(--fg-high-contrast);
         .d-icon {
           color: inherit;
@@ -556,6 +437,7 @@ input[type]:focus,
   }
 }
 
+
 .nav-pills {
   .navigation-toggle {
     padding: 0px 16px;
@@ -565,10 +447,10 @@ input[type]:focus,
     &:first-of-type {
       padding-left: 0;
     }
-    & > a {
+    &>a {
       font-family: $font-stack;
       font-weight: 500;
-      font-size: 1em;
+      font-size: 0.875em;
       letter-spacing: 0.01em;
       line-height: 1.25em;
       color: var(--fg-low-contrast);
@@ -588,10 +470,9 @@ input[type]:focus,
 
 .category-breadcrumb {
   .select-kit-body {
-    transform: translate(0px, 32px) !important;
+  transform:translate(0px, 32px) !important;
   }
-  & > *,
-  & > li {
+  & > *, & > li {
     align-self: center;
     background-color: transparent;
     border: 1px solid;
@@ -603,22 +484,18 @@ input[type]:focus,
     margin-right: 0 !important;
     overflow: visible;
     padding: 7px 16px;
-    div {
+    div { 
       margin-bottom: 0 !important;
-      min-height: unset !important;
     }
-    &:hover,
-    &.is-expanded {
+    &:hover, &.is-expanded {
       border: 2px solid !important;
       border-color: var(--community-blue) !important;
       padding: 5px 15px;
     }
   }
-  .select-kit,
-  .select-kit-header {
+  .select-kit, .select-kit-header { 
     .badge-wrapper {
-      .category-name,
-      .d-icon {
+      .category-name, .d-icon {
         color: var(--fg-high-contrast);
         font-size: 1em;
         font-weight: normal;
@@ -632,11 +509,13 @@ input[type]:focus,
       height: 12px;
       width: 12px;
     }
+    .select-kit-header-wrapper {
+      min-height: 18px !important;
+    }
   }
   .select-kit-collection {
     .badge-wrapper {
-      .category-name,
-      .d-icon {
+      .category-name, .d-icon {
         color: var(--fg-high-contrast);
         font-weight: 400;
       }
@@ -652,6 +531,7 @@ input[type]:focus,
   font-size: unset !important;
   &.bullet {
     margin-right: 6px;
+    vertical-align: text-bottom;
     span.badge-category {
       color: var(--fg-medium-contrast);
       overflow: visible;
@@ -672,120 +552,10 @@ input[type]:focus,
   }
 }
 
-.search-container {
-  .search-bar {
-    input {
-      font-size: 0.875em;
-      font-weight: 500;
-      height: 32px;
-    }
-    button {
-      height: 32px;
-      padding: 5px;
-      width: 32px;
-      &:hover {
-        background: var(--fg-high-contrast);
-      }
-      .d-icon {
-        color: white;
-        font-size: 16px; // Icon
-      }
-    }
-  }
-  .search-advanced {
-    .search-title {
-      #create-topic {
-        @include text-button-small(transparent, var(--fg-high-contrast));
-        .d-icon {
-          display: none;
-        }
-        &:hover {
-          transform: translateY(-2px);
-        }
-      }
-      .bulk-select {
-        background: transparent;
-        font-size: 1.5em;
-        margin: 0 0;
-        padding: 0 0;
-        &:focus {
-          outline: none;
-        }
-      }
-    }
-  }
-  .search-advanced-sidebar {
-    background: transparent;
-    border: 1px solid var(--surface-high-contrast);
-    border-radius: 6px;
-    padding: 8px;
-    .search-advanced-title {
-      background: inherit;
-      padding: 8px 16px;
-      font-size: 1em;
-      font-weight: 600;
-    }
-    .search-advanced-filters {
-      background: inherit;
-      label {
-        font-size: 0.875em;
-      }
-    }
-  }
-}
-
-h3.search-footer {
-  font-size: 1em;
-  font-weight: 600;
-  padding-left: 56px;
-}
-
-.fps-result {
-  padding-left: 0;
-  img.avatar {
-    width: 40px;
-    height: 40px;
-  }
-  .blurb {
-    color: var(--fg-medium-contrast);
-    .date {
-      color: var(--fg-low-contrast);
-    }
-    .search-highlight {
-      font-weight: 600;
-    }
-  }
-  .topic {
-    padding-bottom: 8px;
-    .search-category {
-      font-size: 0.9375em;
-      margin-top: 2px;
-      .badge-wrapper {
-        align-items: center;
-        &.bullet {
-          span.badge-category {
-            color: var(--fg-medium-contrast);
-          }
-        }
-      }
-    }
-    a.search-link {
-      .topic-title {
-        color: var(--fg-high-contrast);
-        font-size: 1.125em;
-        position: relative;
-        &:visited {
-          color: var(--fg-high-contrast);
-        }
-      }
-    }
-  }
-}
-
 /* Tags */
-.discourse-tags > * {
+.discourse-tags > *{
   align-items: center;
-  background-color: transparent;
+  background-color: transparent;        
   color: var(--fg-medium-contrast);
   font-size: 0.875em;
   margin-right: 0.5em;
@@ -824,8 +594,8 @@ tr {
   thead {
     th {
       background-color: var(--surface-low-contrast);
-      border-top: 1px solid #d6d7da;
-      border-bottom: 1px solid #d6d7da;
+      border-top: 1px solid #D6D7DA;
+      border-bottom: 1px solid #D6D7DA;
       color: var(--fg-high-contrast);
       font-size: 0.875em;
       font-weight: 500;
@@ -837,14 +607,14 @@ tr {
       &:first-of-type {
         border-bottom-left-radius: 8px;
         border-top-left-radius: 8px;
-        border-left: 1px solid #d6d7da;
+        border-left: 1px solid #D6D7DA;
         cursor: default; // This prevents the "Topic" column from getting text selected
         padding-left: 16px;
       }
       &:last-of-type {
         border-bottom-right-radius: 8px;
         border-top-right-radius: 8px;
-        border-right: 1px solid #d6d7da;
+        border-right: 1px solid #D6D7DA;
         padding-right: 28px;
       }
       .d-icon {
@@ -852,7 +622,7 @@ tr {
         vertical-align: middle;
       }
     }
-    tr {
+    tr { 
       border-bottom: 0px; // This is added by Discourse
       border-radius: 8px;
     }
@@ -865,7 +635,7 @@ tr {
     }
     // Tables are messy, this adds spacing between thead and tbody
     &:after {
-      content: "";
+      content: '';
       display: block;
       height: 16px;
     }
@@ -882,14 +652,12 @@ tr {
     }
   }
   .heatmap-high {
-    a,
-    .d-icon,
-    .d-button-label {
+    a, .d-icon, .d-button-label {
       font-weight: normal;
-      color: inherit !important;
+      color: inherit !important; 
     }
     font-weight: normal;
-    color: inherit !important;
+    color: inherit !important; 
   }
   .num {
     color: var(--fg-low-contrast);
@@ -980,7 +748,7 @@ tr {
           text-decoration: underline;
           text-decoration-color: currentColor;
           text-decoration-thickness: 2px;
-          text-underline-offset: 3px;
+          text-underline-offset: 2px;
         }
         &:visited {
           color: var(--fg-medium-contrast);
@@ -1031,6 +799,7 @@ tr {
       .badge-category {
         color: var(--fg-medium-contrast);
         .category-name {
+          color: inherit;
           font-size: 0.875em;
           font-weight: 400;
         }
@@ -1048,6 +817,12 @@ tr {
     }
   }
   .topic-list-item-separator {
+    .topic-list-data {
+      border-top: none;
+      span {
+        color: var(--red);
+      }
+    }
     td {
       border-bottom: 2px solid var(--red);
       span {
@@ -1060,7 +835,9 @@ tr {
     }
   }
 }
-
+.topic-list-data {
+  border-bottom: 1px solid var(--surface-low-contrast);
+}
 .topic-list-bottom {
   h3 {
     color: var(--fg-high-contrast);
@@ -1072,9 +849,16 @@ tr {
 /* !!! Topic !!! */
 
 .extra-info-wrapper {
+  .extra-info {
+    overflow: visible;
+  }
   .title-wrapper {
     .categories-wrapper {
+      font-size: 0.875em;
       margin-top: 2px;
+      span.category-name {
+        color: var(--fg-medium-contrast) !important;
+      }
     }
     .header-title {
       align-items: center;
@@ -1084,6 +868,11 @@ tr {
     .topic-link,
     .topic-statuses > .topic-status {
       font-size: 1.125em;
+    }
+  }
+  .topic-header-extra {
+    .discourse-tags {
+      overflow: visible;
     }
   }
 }
@@ -1143,6 +932,10 @@ tr {
     padding: 12px 0;
     font-weight: normal;
     font-size: 0.875em;
+    .custom-message {
+      font-size: inherit;
+      padding-left: 36px; // this is the width of gutter + avatar in the small-actions
+    }
   }
   .topic-avatar {
     align-items: center;
@@ -1452,6 +1245,24 @@ a.mention {
   }
 }
 
+.archetype-private_message {
+  .current-user-post { 
+    .topic-body { 
+      .cooked {
+        background: transparent !important;
+      }
+    }
+  }
+  .topic-body {
+    .cooked {
+      border: none;
+      margin-top: revert;
+      margin-left: revert;
+      padding: 0px 0px 0px 20px;
+    }
+  }
+}
+
 aside.quote {
   .quote-controls {
     .d-icon {
@@ -1486,6 +1297,9 @@ aside.quote {
   }
   .post-links-container {
     margin-left: 20px;
+    ul li a[href] {
+      color: var(--community-blue);
+    }
   }
   .topic-meta-data,
   .cooked {
@@ -1568,7 +1382,7 @@ aside.quote {
       background-color: var(--surface-low-contrast);
       font-family: monospace;
       font-size: 0.875em;
-      padding: 8px;
+      padding: 8px; 
     }
   }
 }
@@ -1587,8 +1401,7 @@ div.poll {
   li {
     font-size: 1em;
   }
-  img:not([width]),
-  img:not([height]) {
+  img:not([width]), img:not([height]) {
     width: 20px !important;
     height: 20px !important;
   }
@@ -1716,6 +1529,13 @@ div.poll {
   .links,
   .information {
     padding: 0px 16px 16px 16px;
+  }
+  .link-summary {
+    .btn {
+      background: var(--surface-low-contrast);
+      color: var(--fg-high-contrast);
+      width: max-content;
+    }
   }
   h4 {
     font-family: $font-stack;
@@ -1926,8 +1746,7 @@ div.poll {
 
 .embedded-posts {
   border: 0;
-  &.bottom,
-  &.top {
+  &.bottom, &.top {
     margin-top: 8px;
     position: relative;
     .arrow {
@@ -1944,8 +1763,7 @@ div.poll {
       &:hover {
         background: var(--surface-low-contrast);
       }
-      .d-icon-arrow-up,
-      .d-icon-arrow-down {
+      .d-icon-arrow-up, .d-icon-arrow-down {
         margin-left: 0px;
       }
     }
@@ -2100,7 +1918,7 @@ aside.onebox {
   .onebox-body {
     display: flex;
     flex-direction: column;
-    .aspect-image {
+    .aspect-image, img {
       content: none;
       display: none;
       margin-right: 0;
@@ -2209,7 +2027,7 @@ aside.onebox {
   .d-icon {
     color: inherit;
     font-size: 16px; // Icon
-    margin-right: 16px;
+    margin-right: 16px; 
   }
 }
 
@@ -2244,8 +2062,8 @@ aside.onebox {
 }
 
 /* Hide the "new user" notice on the introduce-self topic */
-[data-topic-id="102"] .post-notice.new-user {
-  display: none;
+[data-topic-id="102"] .post-notice.new-user { 
+  display: none; 
 }
 
 /* !!! User summary page !!! */
@@ -2477,8 +2295,7 @@ aside.onebox {
       }
     }
   }
-  .item,
-  .user-stream-item {
+  .item, .user-stream-item {
     background-color: transparent;
   }
 }
@@ -2636,7 +2453,7 @@ Badges
       }
     }
     .composer-controls {
-      gap: 8px;
+      gap: 8px; 
       .d-icon {
         color: var(--fg-medium-contrast);
       }
@@ -2734,56 +2551,5 @@ Badges
       display: inline-block !important;
       margin: 0px auto;
     }
-  }
-}
-
-// ???
-// Target: common scss
-// Last Edited: 2020-12-15 23:57:47 UTC
-div[class^="category-title-header"] {
-  display: flex;
-  text-align: center;
-  width: 100%;
-  justify-content: center;
-
-  .category-title-contents {
-    max-width: 500px;
-    padding: 40px;
-
-    .d-icon-lock {
-      height: 1.5em;
-      width: 1.1em;
-      margin-right: 0.25em;
-    }
-
-    .category-title {
-      display: inline;
-    }
-
-    .category-icon-widget {
-      display: inline;
-
-      .category-icon {
-        .d-icon {
-          height: 1.5em;
-          width: 1.5em;
-          margin-right: 0.75em;
-        }
-      }
-    }
-  }
-
-  .category-title-description {
-    a,
-    a:visited {
-      color: inherit;
-      text-decoration: underline;
-    }
-  }
-}
-
-.category-header {
-  #main-outlet {
-    padding-top: 20px;
   }
 }
