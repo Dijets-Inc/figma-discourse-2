@@ -2,5 +2,51 @@
   "name": "Figma Discourse Theme",
   "about_url": "https://some.url.com",
   "license_url": "https://github.com/bluematter/figma-discourse-theme/blob/main/LICENSE",
-  "component": false
+  "assets": {
+    "banner": "https://europe1.discourse-cdn.com/figma/original/2X/a/a07141646f7888df129d3a664f99728a1caa44fc.svg",
+    "dot-grid": "https://europe1.discourse-cdn.com/figma/original/2X/3/3cae2c422a62197381b15f8334f87580d21083c7.svg",
+    "figjam-board": "https://europe1.discourse-cdn.com/figma/original/2X/1/1dc8bbe8a1898f1c68971230ad95685f8a8416bc.svg",
+    "figma-icon": "https://europe1.discourse-cdn.com/figma/original/1X/bd18047515d1602ba587a2d7a756d77c81f1c786.svg",
+    "general-discussion": "https://europe1.discourse-cdn.com/figma/original/2X/b/b24457baaa3c81a4b6c186dc58e985698622a63a.svg"
+  },
+  "color_schemes": {
+      "light": {
+          "primary": "#000000",
+          "secondary": "#ffffff", 
+          "tertiary": "#236df6, 
+          "quaternary": "#000000", 
+          "header_background": "#ffffff", 
+          "header_primary": "#333333",
+          "highlight": "#f5eac1", 
+          "danger": "#f24e1e", 
+          "success": "#0fa958", 
+          "love": "#f24e1e", 
+          "primary-low": "#f5f5f5", 
+          "tertiary-low": "#f0f0f0", 
+          "primary-low-mid": "#d6d6d6", 
+          "primary-medium": "#5d5d5d", 
+          "primary-high": "#333333", 
+          "hover": "#f0f0f0", 
+          "selected": "#e6e6e6"
+       },
+       "dark": {
+          "primary": "#000000",
+          "secondary": "#ffffff", 
+          "tertiary": "#236df6, 
+          "quaternary": "#000000", 
+          "header_background": "#ffffff", 
+          "header_primary": "#333333",
+          "highlight": "#f5eac1", 
+          "danger": "#f24e1e", 
+          "success": "#0fa958", 
+          "love": "#f24e1e", 
+          "primary-low": "#f5f5f5", 
+          "tertiary-low": "#f0f0f0", 
+          "primary-low-mid": "#d6d6d6", 
+          "primary-medium": "#5d5d5d", 
+          "primary-high": "#333333", 
+          "hover": "#f0f0f0", 
+          "selected": "#e6e6e6"
+        }
+   }
 }
