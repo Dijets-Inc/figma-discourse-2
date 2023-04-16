@@ -6,7 +6,7 @@ Base Source:
 https://sjc3.discourse-cdn.com/business7/stylesheets/app/assets/stylesheets/vendor/pikaday.scss
 ------------------------
 */
-@import "typography";
+@import 'typography';
 
 .pika-button {
   font-family: $font-stack;
@@ -18,9 +18,7 @@ https://sjc3.discourse-cdn.com/business7/stylesheets/app/assets/stylesheets/vend
   border-radius: 6px;
 }
 
-.pika-single,
-.pika-label,
-.pika-button {
+.pika-single, .pika-label, .pika-button {
   background: transparent;
   color: var(--fg-high-contrast);
 }
