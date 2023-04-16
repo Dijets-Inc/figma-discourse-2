@@ -6,7 +6,7 @@ Modals
 /* General modal theming */
 
 .modal-backdrop {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0,0,0,0.2);
   opacity: 1;
 }
 
@@ -46,6 +46,10 @@ Modals
 
 .modal-footer {
   border-top: 0;
+  gap: 8px;
+  .btn {
+    margin: inherit !important;
+  }
 }
 
 /* The share and invite modal appears at the bottom of every forum 
@@ -54,6 +58,7 @@ thread/post. */
   transition: all 0.15s ease-out;
   input[type="text"] {
     margin-bottom: 16px;
+    margin-right: 8px;
   }
   .sources {
     max-width: unset;
