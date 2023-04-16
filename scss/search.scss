@@ -1,0 +1,125 @@
+/* 
+Figma Community Forum
+Search theming (non-panel)
+*/
+
+.search-container {
+  .search-bar {
+    background: transparent;
+    input {
+      font-size: 0.875em;
+      font-weight: 500;
+      // height: 32px; // removing this for the new search redesign
+    }
+    button {
+      height: 32px;
+      padding: 5px;
+      &:hover {
+        background: var(--fg-high-contrast);
+      }
+      .d-icon {
+        color: white;
+        font-size: 16px; // Icon
+      }
+    }
+  }
+  .search-header {
+    background: transparent;
+    padding: 0 8px;
+    .search-page-heading {
+      font-weight: 500;
+      span.term {
+        background: transparent;
+        font-weight: 600;
+      }
+    }
+  }
+  .search-filters {
+    background: transparent;
+    .search-advanced-filters {
+      background: transparent;
+      margin-bottom: 16px;
+      label {
+        font-size: 0.875em;
+      }
+    }
+  }
+  .search-advanced {
+    label {
+        font-size: 0.875em;
+        margin-right: 0.5ch;
+    }
+    .search-info {
+        padding: 0 0;
+        border-bottom: 2px solid var(--surface-low-contrast);
+    }
+    .search-results {
+      padding: 0;
+    }
+    .search-title {
+      #create-topic {
+        @include text-button-small(transparent, var(--fg-high-contrast));
+        .d-icon {
+          display: none;
+        }
+      }
+      .bulk-select {
+        background: transparent;
+        font-size: 1.5em;
+        margin: 0 0;
+        padding: 0 0;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+h3.search-footer {
+  font-size: 1em;
+  font-weight: 600;
+  padding-left: 56px;
+}
+
+.fps-result {
+  padding-left: 0;
+  img.avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .blurb {
+    color: var(--fg-medium-contrast);
+    .date {
+      color: var(--fg-low-contrast);
+    }
+    .search-highlight {
+      font-weight: 600;
+    }
+  }
+  .topic {
+    padding-bottom: 8px;
+    .search-category {
+      font-size: 0.9375em;
+      margin-top: 2px;
+      .badge-wrapper {
+        align-items: center;
+        &.bullet {
+          span.badge-category {
+            color: var(--fg-medium-contrast);
+          }
+        }
+      }
+    }
+    a.search-link {
+      .topic-title {
+        color: var(--fg-high-contrast);
+        font-size: 1.125em;
+        position: relative;
+        &:visited {
+          color: var(--fg-high-contrast);
+        }
+      }
+    }
+  }
+}
