@@ -25,6 +25,8 @@ making the # selector valid and extremely precise for this.
   width: 25vw;
   z-index: 9999;
   .title {
+    gap: 1ch;
+    justify-content: initial;
     h3 {
       font-size: 1em;
       font-weight: 500;
@@ -83,7 +85,7 @@ making the # selector valid and extremely precise for this.
     }
     .close {
       position: absolute;
-      top: 20px;
+      top: 8px;
       right: 8px;
       .d-icon {
         font-size: 12px; // Icon
