@@ -1,0 +1,107 @@
+/* 
+Figma Community Forum
+Admin theming
+*/
+
+.admin-controls {
+  background-color: var(--surface-low-contrast) !important;
+  nav {
+    background-color: transparent;
+    &:before,
+    &:after {
+      content: none;
+      display: none;
+    }
+    li {
+      a {
+        &.active {
+          background: transparent !important;
+        }
+      }
+    }
+  }
+  .controls {
+    background-color: transparent;
+  }
+}
+
+.admin-customize {
+  .alert {
+    &.alert-info {
+      background-color: var(--community-blue);
+      color: var(--bold-fg);
+      display: block !important;
+    }
+    a {
+      color: var(--bold-fg);
+      text-decoration: underline;
+    }
+  }
+  .themes-list-header {
+    border-bottom: 1px solid var(--surface-high-contrast);
+    border-top: 1px solid var(--surface-high-contrast);
+    border-radius: 0;
+    border-right: 1px solid var(--surface-high-contrast);
+    .tab {
+      &.active {
+        border-radius: 0;
+      }
+      &:last-child {
+        border-left: 0;
+      }
+    }
+  }
+  .themes-list-container {
+    border-right: 1px solid var(--surface-high-contrast);
+    border-bottom: 1px solid var(--surface-high-contrast);
+    .themes-list-item {
+      color: var(--fg-high-contrast);
+      border-bottom: 1px solid var(--surface-high-contrast);
+      border-left: 1px solid var(--surface-high-contrast);
+      &:not(.inactive-indicator) {
+        &:not(.selected):hover {
+          background-color: var(--surface-high-contrast);
+        }
+      }
+      .components-list {
+        color: var(--fg-medium-contrast);
+      }
+    }
+  }
+}
+
+.nav-stacked {
+  background-color: var(--surface-low-contrast);
+  a {
+    color: var(--fg-medium-contrast);
+    &.active {
+      background-color: var(--surface-high-contrast);
+      color: var(--fg-high-contrast);
+    }
+  }
+  li {
+    border-bottom: 0;
+  }
+}
+
+.admin-detail {
+  background-color: transparent;
+  border-left: 0;
+}
+
+.settings {
+  .setting {
+    &.overridden {
+      h3 {
+        color: var(--fg-high-contrast);
+      }
+      &.string {
+        input[type="text"],
+        input[type="password"],
+        textarea {
+          background-color: var(--bg);
+        }
+      }
+    }
+  }
+}
