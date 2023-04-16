@@ -1,4 +1,47 @@
-$primary: #000000 !default; $secondary: #ffffff !default; $tertiary: #236df6 !default; $quaternary: #000000 !default; $header_background: #ffffff !default; $header_primary: #333333 !default; $highlight: #f5eac1 !default; $danger: #f24e1e !default; $success: #0fa958 !default; $love: #f24e1e !default; $primary-low: #f5f5f5 !default; $tertiary-low: #f0f0f0 !default; $primary-low-mid: #d6d6d6 !default; $primary-medium: #5d5d5d !default; $primary-high: #333333 !default; $hover: #f0f0f0 !default; $selected: #e6e6e6 !default;  $public_image_path: "https://dub2.discourse-cdn.com/figma/images";  @import "common/foundation/variables"; @import "common/foundation/mixins"; $banner: unquote("https://europe1.discourse-cdn.com/figma/original/2X/a/a07141646f7888df129d3a664f99728a1caa44fc.svg");$dot-grid: unquote("https://europe1.discourse-cdn.com/figma/original/2X/3/3cae2c422a62197381b15f8334f87580d21083c7.svg");$figjam-board: unquote("https://europe1.discourse-cdn.com/figma/original/2X/1/1dc8bbe8a1898f1c68971230ad95685f8a8416bc.svg");$figma-icon: unquote("https://europe1.discourse-cdn.com/figma/original/1X/bd18047515d1602ba587a2d7a756d77c81f1c786.svg");$general-discussion: unquote("https://europe1.discourse-cdn.com/figma/original/2X/b/b24457baaa3c81a4b6c186dc58e985698622a63a.svg");$ic-beta: unquote("https://europe1.discourse-cdn.com/figma/original/2X/4/418c4f87f08ac8b8ecda581b8c699fc3d99b04d4.svg");$Inter-Bold: unquote("https://europe1.discourse-cdn.com/figma/original/2X/a/a197eb37acbe6c839d9a549a08fe80bb8a39d6aa.woff2");$Inter-BoldItalic: unquote("https://europe1.discourse-cdn.com/figma/original/2X/9/9d433655544762bd3d47e1dbe883d368dee3ea9f.woff2");$Inter-Italic: unquote("https://europe1.discourse-cdn.com/figma/original/2X/e/e8877937d0b862d8e743d9172576047a05faf11e.woff2");$Inter-Medium: unquote("https://europe1.discourse-cdn.com/figma/original/2X/8/85bd69c6604c42cd7cff42f69686ae9f5765b09c.woff2");$Inter-MediumItalic: unquote("https://europe1.discourse-cdn.com/figma/original/2X/f/fb3bf6cadab86352a454f3e2754a04a680d45d6e.woff2");$Inter-Regular: unquote("https://europe1.discourse-cdn.com/figma/original/2X/d/d54ba8fa95573fa24442dab96795eaf8db66aa80.woff2");$Inter-SemiBold: unquote("https://europe1.discourse-cdn.com/figma/original/2X/3/3e4531452e8ed6b6ddeb7a9c53c8e09f3575c006.woff2");$Inter-SemiBoldItalic: unquote("https://europe1.discourse-cdn.com/figma/original/2X/8/824995d8e9586f26e1b867904d542ca787ae1d38.woff2");$Inter-Var-Italic: unquote("https://europe1.discourse-cdn.com/figma/original/2X/5/5c2ff0c81a369e4ff3b060b5eeee59e82058a41e.woff2");$Inter-Var-Roman: unquote("https://europe1.discourse-cdn.com/figma/original/2X/0/03d67f11d4c6bcdd6182f0bcebb26d11e8c13dd3.woff2");$mobile-beta: unquote("https://europe1.discourse-cdn.com/figma/original/2X/c/caf27ddc3497bb0e5c35ed9420c1b0298921bac4.svg");$plugin-api: unquote("https://europe1.discourse-cdn.com/figma/original/2X/7/7975c39fb41e8b6572648c86025a4a0c682e3538.svg");$product-ideas: unquote("https://europe1.discourse-cdn.com/figma/original/2X/1/1010e9bca59e19899a166d4594d25bccf3c6408c.svg");$product-questions: unquote("https://europe1.discourse-cdn.com/figma/original/2X/5/592ed6ed8ea526c61f524f92e221a8918e5323ac.svg");$rest-api: unquote("https://europe1.discourse-cdn.com/figma/original/2X/8/8aa7b09cfc5606cb812a174114c76b5b8a96cf58.svg");$zendesk-icon: unquote("https://europe1.discourse-cdn.com/figma/original/1X/314083583b5555490fe4b44f742725a8eb0a5d53.svg");// Theme: Figma
+$primary: #000000 !default; 
+$secondary: #ffffff !default; 
+$tertiary: #236df6 !default; 
+$quaternary: #000000 !default; 
+$header_background: #ffffff !default; 
+$header_primary: #333333 !default; 
+$highlight: #f5eac1 !default; 
+$danger: #f24e1e !default; 
+$success: #0fa958 !default;
+$love: #f24e1e !default; 
+$primary-low: #f5f5f5 !default; 
+$tertiary-low: #f0f0f0 !default; 
+$primary-low-mid: #d6d6d6 !default; 
+$primary-medium: #5d5d5d !default; 
+$primary-high: #333333 !default; 
+$hover: #f0f0f0 !default; 
+$selected: #e6e6e6 !default;  
+$public_image_path: "https://dub2.discourse-cdn.com/figma/images";  
+@import "common/foundation/variables"; 
+@import "common/foundation/mixins"; 
+$banner: unquote("https://europe1.discourse-cdn.com/figma/original/2X/a/a07141646f7888df129d3a664f99728a1caa44fc.svg");
+$dot-grid: unquote("https://europe1.discourse-cdn.com/figma/original/2X/3/3cae2c422a62197381b15f8334f87580d21083c7.svg");
+$figjam-board: unquote("https://europe1.discourse-cdn.com/figma/original/2X/1/1dc8bbe8a1898f1c68971230ad95685f8a8416bc.svg");
+$figma-icon: unquote("https://europe1.discourse-cdn.com/figma/original/1X/bd18047515d1602ba587a2d7a756d77c81f1c786.svg");
+$general-discussion: unquote("https://europe1.discourse-cdn.com/figma/original/2X/b/b24457baaa3c81a4b6c186dc58e985698622a63a.svg");
+$ic-beta: unquote("https://europe1.discourse-cdn.com/figma/original/2X/4/418c4f87f08ac8b8ecda581b8c699fc3d99b04d4.svg");
+$Inter-Bold: unquote("https://europe1.discourse-cdn.com/figma/original/2X/a/a197eb37acbe6c839d9a549a08fe80bb8a39d6aa.woff2");
+$Inter-BoldItalic: unquote("https://europe1.discourse-cdn.com/figma/original/2X/9/9d433655544762bd3d47e1dbe883d368dee3ea9f.woff2");
+$Inter-Italic: unquote("https://europe1.discourse-cdn.com/figma/original/2X/e/e8877937d0b862d8e743d9172576047a05faf11e.woff2");
+$Inter-Medium: unquote("https://europe1.discourse-cdn.com/figma/original/2X/8/85bd69c6604c42cd7cff42f69686ae9f5765b09c.woff2");
+$Inter-MediumItalic: unquote("https://europe1.discourse-cdn.com/figma/original/2X/f/fb3bf6cadab86352a454f3e2754a04a680d45d6e.woff2");
+$Inter-Regular: unquote("https://europe1.discourse-cdn.com/figma/original/2X/d/d54ba8fa95573fa24442dab96795eaf8db66aa80.woff2");
+$Inter-SemiBold: unquote("https://europe1.discourse-cdn.com/figma/original/2X/3/3e4531452e8ed6b6ddeb7a9c53c8e09f3575c006.woff2");
+$Inter-SemiBoldItalic: unquote("https://europe1.discourse-cdn.com/figma/original/2X/8/824995d8e9586f26e1b867904d542ca787ae1d38.woff2");
+$Inter-Var-Italic: unquote("https://europe1.discourse-cdn.com/figma/original/2X/5/5c2ff0c81a369e4ff3b060b5eeee59e82058a41e.woff2");
+$Inter-Var-Roman: unquote("https://europe1.discourse-cdn.com/figma/original/2X/0/03d67f11d4c6bcdd6182f0bcebb26d11e8c13dd3.woff2");
+$mobile-beta: unquote("https://europe1.discourse-cdn.com/figma/original/2X/c/caf27ddc3497bb0e5c35ed9420c1b0298921bac4.svg");
+$plugin-api: unquote("https://europe1.discourse-cdn.com/figma/original/2X/7/7975c39fb41e8b6572648c86025a4a0c682e3538.svg");
+$product-ideas: unquote("https://europe1.discourse-cdn.com/figma/original/2X/1/1010e9bca59e19899a166d4594d25bccf3c6408c.svg");
+$product-questions: unquote("https://europe1.discourse-cdn.com/figma/original/2X/5/592ed6ed8ea526c61f524f92e221a8918e5323ac.svg");
+$rest-api: unquote("https://europe1.discourse-cdn.com/figma/original/2X/8/8aa7b09cfc5606cb812a174114c76b5b8a96cf58.svg");
+$zendesk-icon: unquote("https://europe1.discourse-cdn.com/figma/original/1X/314083583b5555490fe4b44f742725a8eb0a5d53.svg");
+
+// Theme: Figma
 // Target: common scss
 // Last Edited: 2022-08-31 20:35:20 UTC
 /* 
@@ -22,7 +65,7 @@ want to update, find the selector, and make the changes you need.
 */
 
 /* Options */
-$dark-mode: false !default;
+$dark-mode: true !default;
 $header-text: false !default;
 
 /* Imports */
