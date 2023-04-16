@@ -129,7 +129,7 @@ Category boxes & other related ephemera
       padding: 0;
       .category-logo {
         align-self: center;
-        background-color: var(--fg-low-contrast);
+        background-color: transparent;
         display: inline-block;
         width: 132px;
         height: 132px;
@@ -210,6 +210,7 @@ Category boxes & other related ephemera
     .category-box-inner {
       column-gap: 24px;
       .category-logo {
+        background-color: transparent; // This prevents aliasing from the BG color
         height: 80px;
         width: 80px;
       }
