@@ -89,8 +89,8 @@ items trigger a dropdown */
         color: var(--modal-fg);
       }
       .badge-category-bg {
-        margin-left: -24px;
-        margin-right: 16px !important;
+        margin-left: 2px;
+        margin-right: 10px !important;
       }
       .badge-notification {
         width: unset;
@@ -136,7 +136,7 @@ items trigger a dropdown */
     li {
       /* These are Admin and Settings, but also individual results from 
       the Search Menu */
-      padding: 0px 24px 0px 30px;
+      padding: 0px 24px 0px 24px;
       &:hover {
         background-color: var(--community-blue);
         .d-icon,
