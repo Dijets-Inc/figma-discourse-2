@@ -233,6 +233,10 @@ $banner: unquote("https://europe1.discourse-cdn.com/figma/original/2X/a/a0714164
     min-width: 302px !important;
 }
 
+.login-modal:not(.hidden) .login-left-side .modal-footer {
+    padding: 14px !important;
+}
+
 .create-account .disclaimer {
     font-size: 13px !important;
 }
