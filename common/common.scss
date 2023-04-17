@@ -501,6 +501,10 @@ $header-text: false !default;
 @import "category-boxes";
 @import "search";
 
+html {
+    text-rendering: geometricprecision !important;
+}
+
 .navigation-container {
   --nav-space: 0;
 }
