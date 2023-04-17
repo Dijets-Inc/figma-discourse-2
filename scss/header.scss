@@ -53,14 +53,14 @@ is shown.
     margin-top: 0;
     .btn {
       @include text-button-large();
+      font-size: 1em !important;
     }
     .btn:hover {
       background-color: var(--bold-bg);
       color: var(--bold-fg);
     }
     .login-button {
-      font-size: 1.125em !important;
-      height: revert;
+      font-size: 1em !important;
       margin-left: 16px;
       .d-icon {
         display: none;
