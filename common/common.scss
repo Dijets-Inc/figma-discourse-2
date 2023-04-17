@@ -224,6 +224,10 @@ $banner: unquote("https://europe1.discourse-cdn.com/figma/original/2X/a/a0714164
     display: none !important;
 }
 
+.login-modal:not(.hidden) #login-form .input-group span.more-info, .login-modal:not(.hidden) .login-form .input-group span.more-info, .login-modal:not(.hidden) .invite-form .input-group span.more-info, .create-account #login-form .input-group span.more-info, .create-account .login-form .input-group span.more-info, .create-account .invite-form .input-group span.more-info, .invites-show #login-form .input-group span.more-info, .invites-show .login-form .input-group span.more-info, .invites-show .invite-form .input-group span.more-info {
+    font-size: 13px !important;
+}
+
 .topic-body:before {
     background-color: var(--surface-high-contrast) !important;
     content: "" !important;
