@@ -387,18 +387,6 @@ $banner: unquote("https://europe1.discourse-cdn.com/figma/original/2X/a/a0714164
     margin-top: 1em;
   }
 
-  // Drop heading below main title
-  @if $dismissible == "true" or $collapsible == "true" {
-    .button-container {
-      button {
-        padding: 5px 5px;
-      }
-      .d-button-label {
-        display: none;
-      }
-    }
-  }
-
   // Make columns big enough to wrap
   .first_column,
   .second_column,
