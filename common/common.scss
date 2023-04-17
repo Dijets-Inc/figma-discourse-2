@@ -502,6 +502,18 @@ div.ac-wrap {
     display: none
 }
 
+.banner-box .section-header .description p {
+    display: none !important;
+}
+
+.banner-box .section-header .x-title {
+    display: none !important;
+}
+
+.banner-box .section-header .colored-line {
+    display: none !important;
+}
+
 .admin-controls nav li a.active {
     background: rgba(0,0,0,0) !important
 }
