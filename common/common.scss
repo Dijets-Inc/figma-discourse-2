@@ -224,6 +224,17 @@ $banner: unquote("https://europe1.discourse-cdn.com/figma/original/2X/a/a0714164
     display: none !important;
 }
 
+.topic-body:before {
+    background-color: var(--surface-high-contrast) !important;
+    content: "" !important;
+    display: block !important;
+    position: absolute !important;
+    top: 64px !important;
+    left: -26px !important;
+    height: calc(100% - 72px) !important;
+    width: 2px !important;
+}
+
 .banner-box {
   width: $large-width;
   max-width: calc(100% - 16px);
