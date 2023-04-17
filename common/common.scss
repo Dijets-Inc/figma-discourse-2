@@ -295,6 +295,12 @@ $banner: unquote("https://europe1.discourse-cdn.com/figma/original/2X/a/a0714164
     text-align: center;
     color: var(--banner-secondary-text);
   }
+  
+  .d-header #site-logo {
+    height: 56px !important;
+    margin-left: 4px !important;
+    margin-right: 24px;
+}
 
   a {
     color: var(--banner-link-text);
