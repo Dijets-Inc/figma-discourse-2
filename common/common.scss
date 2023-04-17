@@ -220,6 +220,10 @@ $banner: unquote("https://europe1.discourse-cdn.com/figma/original/2X/a/a0714164
   }
 }
 
+.alert-too-few-topics {
+    display: none !important;
+}
+
 .banner-box {
   width: $large-width;
   max-width: calc(100% - 16px);
