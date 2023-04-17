@@ -346,13 +346,6 @@ $banner: unquote("https://europe1.discourse-cdn.com/figma/original/2X/a/a0714164
   }
 }
 
-// Category Banners Tweaks
-.category-header {
-  #main .banner-box {
-    margin: 20px auto;
-  }
-}
-
 //-------------------------- Setting Based Rules --------------------------//
 //                      Modified using theme settings
 //-------------------------------------------------------------------------//
@@ -434,6 +427,10 @@ $header-text: false !default;
 
 .navigation-container {
   --nav-space: 0;
+}
+
+.banner-box .row {
+    display: none !important;
 }
 
 *:focus {
