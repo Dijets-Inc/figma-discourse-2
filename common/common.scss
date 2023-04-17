@@ -356,20 +356,20 @@ body[class*=archetype-] .hero-container, body[class*=archetype-] .hero {
 
 // Hero
 .hero {
-  background: #3164FA;
-  background-image: url("https://europe1.discourse-cdn.com/figma/original/2X/a/a07141646f7888df129d3a664f99728a1caa44fc.svg");
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  position: absolute;
-  right: 0;
-  top: 60px;
-  height: 230px;
-  overflow: hidden;
+    background: #e5ecff;
+    background-image: url("https://europe1.discourse-cdn.com/figma/original/2X/a/a07141646f7888df129d3a664f99728a1caa44fc.svg");
+    background-position: right center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    height: 230px;
+    overflow: hidden;
   img {
     margin-top: 83px;
     overflow: hidden;
