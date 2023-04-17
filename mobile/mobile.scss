@@ -1,0 +1,33 @@
+.topic-map {
+  margin-left: 0;
+  max-width: 95%;
+}
+
+#reply-control .d-editor-preview img:not(.thumbnail), .cooked img:not(.thumbnail) {
+  max-width: 100%!important;
+}
+
+article div.row {
+  padding: 15px;
+}
+
+body {
+  overflow: hidden;
+}
+
+
+.category-list-item.category {
+  border-bottom: 0px;
+  border-top: 0px;
+  margin: 30px 10px;
+  background: $highlight;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 4px 6px 0px;
+}
+
+
+#navigation-bar {
+  li:first-child, li,  li:last-child{
+    border-radius: 6px;
+  }
+}
