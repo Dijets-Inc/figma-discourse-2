@@ -195,16 +195,6 @@ $banner: unquote("https://europe1.discourse-cdn.com/figma/original/2X/a/a0714164
 
 // Target: common scss
 // Last Edited: 2022-03-24 16:36:13 UTC
-@if $display_on_desktop == "false" {
-  .desktop-view .banner-box {
-    display: none !important;
-  }
-}
-@if $display_on_mobile == "false" {
-  .mobile-view .banner-box {
-    display: none !important;
-  }
-}
 
 // Default positioning when outlet is shared
 #main > div {
@@ -227,17 +217,6 @@ $banner: unquote("https://europe1.discourse-cdn.com/figma/original/2X/a/a0714164
   #main-outlet {
     max-width: calc(100% - 16px);
     width: $large-width;
-  }
-}
-
-@if $swap_default_positioning == "true" {
-  #main > div {
-    .below-site-header-outlet {
-      order: -2;
-      & + .below-site-header-outlet {
-        order: -1;
-      }
-    }
   }
 }
 
