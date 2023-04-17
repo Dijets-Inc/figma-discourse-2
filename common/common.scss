@@ -193,6 +193,306 @@ $banner: unquote("https://europe1.discourse-cdn.com/figma/original/2X/a/a0714164
 
 :root{--banner-bg-color: #000;--banner-primary-text: #fff;--banner-secondary-text: #fff;--banner-link-text: #fff;--banner-bg-img: url(assets/banner.svg)}
 
+// Target: common scss
+// Last Edited: 2022-03-24 16:36:13 UTC
+@if $display_on_desktop == "false" {
+  .desktop-view .banner-box {
+    display: none !important;
+  }
+}
+@if $display_on_mobile == "false" {
+  .mobile-view .banner-box {
+    display: none !important;
+  }
+}
+
+// Default positioning when outlet is shared
+#main > div {
+  display: flex;
+  flex-direction: column;
+
+  .above-site-header-outlet {
+    order: -4;
+  }
+  .d-header-wrap {
+    order: -3;
+  }
+  .below-site-header-outlet {
+    order: -1;
+    & + .below-site-header-outlet {
+      order: -2;
+    }
+  }
+
+  #main-outlet {
+    max-width: calc(100% - 16px);
+    width: $large-width;
+  }
+}
+
+@if $swap_default_positioning == "true" {
+  #main > div {
+    .below-site-header-outlet {
+      order: -2;
+      & + .below-site-header-outlet {
+        order: -1;
+      }
+    }
+  }
+}
+
+.banner-box {
+  width: $large-width;
+  max-width: calc(100% - 16px);
+  margin: 0 auto;
+  margin-top: 20px;
+  color: var(--banner-primary-text);
+  position: relative;
+  background-image: var(--banner-bg-img);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: var(--banner-bg-color);
+
+  .button-container {
+    margin-right: 5px;
+    position: absolute;
+    z-index: z("base") + 1;
+    right: 0;
+    top: 2px;
+
+    .close,
+    .toggle {
+      float: right;
+      padding: 5px;
+      border: none;
+      color: #646464;
+      background: transparent;
+      font-size: 1.5157em;
+      cursor: pointer;
+
+      svg {
+        color: #646464;
+      }
+      .d-button-label {
+        font-size: 1em;
+        color: #646464;
+      }
+
+      &:hover {
+        svg {
+          color: #222222;
+        }
+        .d-button-label {
+          font-size: 1em;
+          color: #222222;
+        }
+      }
+
+      .svg-icon.hidden {
+        display: none;
+      }
+    }
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+    color: var(--banner-secondary-text);
+  }
+
+  a {
+    color: var(--banner-link-text);
+  }
+
+  .section-header {
+    padding-bottom: 20px;
+
+    .x-title {
+      padding: 25px 65px;
+      margin: 0;
+    }
+
+    .colored-line {
+      margin: auto;
+      width: 165px;
+      height: 1px;
+      background: var(--banner-secondary-text);
+    }
+
+    .description p {
+      margin: 0;
+      padding: 15px;
+      text-align: center;
+    }
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+
+    .single-box {
+      float: left;
+      position: relative;
+      min-height: 1px;
+      padding: 0px 15px 30px;
+      text-align: center;
+
+      .icon {
+        font-size: 70px;
+        color: var(--banner-secondary-text);
+
+        .responsive-img {
+          vertical-align: -0.125em;
+          border-style: none;
+          border-width: 1px;
+          height: 70px;
+        }
+      }
+
+      .banner-list {
+        display: flex;
+        justify-content: center;
+        ul {
+          text-align: left;
+          margin: 0;
+        }
+      }
+
+      .btn.btn-icon-text {
+        background: var(--banner-secondary-text);
+      }
+    }
+  }
+}
+
+// Category Banners Tweaks
+.category-header {
+  #main .banner-box {
+    margin: 20px auto;
+  }
+}
+
+//-------------------------- Setting Based Rules --------------------------//
+//                      Modified using theme settings
+//-------------------------------------------------------------------------//
+
+////////////// Columns //////////////
+
+// First column
+@if $first_column_size == "auto" {
+  .first_column {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+} @else {
+  .first_column {
+    width: $first_column_size;
+  }
+}
+
+// Second column
+@if $second_column_size == "auto" {
+  .second_column {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+} @else {
+  .second_column {
+    width: $second_column_size;
+  }
+}
+
+// Third column
+@if $third_column_size == "auto" {
+  .third_column {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+} @else {
+  .third_column {
+    width: $third_column_size;
+  }
+}
+
+// Fourth column
+@if $fourth_column_size == "auto" {
+  .fourth_column {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+} @else {
+  .fourth_column {
+    width: $fourth_column_size;
+  }
+}
+
+////////////// Full Width //////////////
+
+@if $full_width_banner == "true" {
+  #main .banner-box {
+    width: unset;
+    max-width: unset;
+    margin: 0;
+
+    .container {
+      max-width: 85%;
+      margin: 0 auto;
+    }
+  }
+
+  // Category Banners Tweaks
+  .category-header {
+    #main .banner-box {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 736px) {
+  // Wrap columns
+  .banner-box .row {
+    display: block;
+  }
+
+  .banner-box .section-header .x-title {
+    padding: 15px;
+    margin-top: 1em;
+  }
+
+  // Drop heading below main title
+  @if $dismissible == "true" or $collapsible == "true" {
+    .button-container {
+      button {
+        padding: 5px 5px;
+      }
+      .d-button-label {
+        display: none;
+      }
+    }
+  }
+
+  // Make columns big enough to wrap
+  .first_column,
+  .second_column,
+  .third_column,
+  .fourth_column {
+    width: 90%;
+  }
+}
+
+// Experimental mobile width tweaks.
+.mobile-view #main > div #main-outlet {
+  width: -webkit-fill-available;
+  width: -moz-available;
+}
+
+.hidden-banner {
+  display: none;
+}
+
+
 /* Options */
 $dark-mode: false !default;
 $header-text: false !default;
