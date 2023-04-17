@@ -358,58 +358,6 @@ $banner: unquote("https://europe1.discourse-cdn.com/figma/original/2X/a/a0714164
 //-------------------------------------------------------------------------//
 
 ////////////// Columns //////////////
-
-// First column
-@if $first_column_size == "auto" {
-  .first_column {
-    flex-grow: 1;
-    flex-basis: 0;
-  }
-} @else {
-  .first_column {
-    width: $first_column_size;
-  }
-}
-
-// Second column
-@if $second_column_size == "auto" {
-  .second_column {
-    flex-grow: 1;
-    flex-basis: 0;
-  }
-} @else {
-  .second_column {
-    width: $second_column_size;
-  }
-}
-
-// Third column
-@if $third_column_size == "auto" {
-  .third_column {
-    flex-grow: 1;
-    flex-basis: 0;
-  }
-} @else {
-  .third_column {
-    width: $third_column_size;
-  }
-}
-
-// Fourth column
-@if $fourth_column_size == "auto" {
-  .fourth_column {
-    flex-grow: 1;
-    flex-basis: 0;
-  }
-} @else {
-  .fourth_column {
-    width: $fourth_column_size;
-  }
-}
-
-////////////// Full Width //////////////
-
-@if $full_width_banner == "true" {
   #main .banner-box {
     width: unset;
     max-width: unset;
@@ -427,7 +375,6 @@ $banner: unquote("https://europe1.discourse-cdn.com/figma/original/2X/a/a0714164
       margin: 0;
     }
   }
-}
 
 @media screen and (max-width: 736px) {
   // Wrap columns
