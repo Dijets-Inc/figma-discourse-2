@@ -350,6 +350,63 @@ $banner: unquote("https://europe1.discourse-cdn.com/figma/original/2X/a/a0714164
   }
 }
 
+// Hero
+.hero {
+  background: #3164FA;
+  background-image: url("https://assets.website-files.com/5e997428d0f2eb13a90aec8c/6363b3b0548d0b5e946f2688_bh-1.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  height: 230px;
+  overflow: hidden;
+  img {
+    margin-top: 83px;
+    overflow: hidden;
+  }
+  h1 {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 38%;
+    transform: translate(-50%);
+    color: white;
+    font-family: "ManropeLight", "ManropeRegular", sans-serif;
+    line-height: 40px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 100;
+  }
+}
+
+.hero-container {
+  min-height: 260px;
+}
+
+@media (min-width: 780px) {
+  div.hero {
+    justify-content: space-around;
+    top: 60px;
+    h1 {
+      display: block;
+      font-family: "ManropeLight", "ManropeRegular", sans-serif;
+      line-height: 56px;
+      font-size: 42px;
+      font-weight: 100;
+      color: #ffffff;
+      transform: none;
+      position: inherit;
+      text-align: left;
+    }
+  }
+}
+
 //-------------------------- Setting Based Rules --------------------------//
 //                      Modified using theme settings
 //-------------------------------------------------------------------------//
