@@ -136,7 +136,7 @@ items trigger a dropdown */
     li {
       /* These are Admin and Settings, but also individual results from 
       the Search Menu */
-      padding: 0px 24px 0px 48px;
+      padding: 0px 24px 0px 30px;
       &:hover {
         background-color: var(--community-blue);
         .d-icon,
