@@ -438,7 +438,7 @@ body[class*=archetype-] .hero-container, body[class*=archetype-] .hero {
 }
 
 .hero-container {
-  min-height: 260px;
+  min-height: 0px;
 }
 
 @media (min-width: 780px) {
